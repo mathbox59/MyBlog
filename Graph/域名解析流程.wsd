@@ -1,4 +1,3 @@
-@startuml
 
 @startuml
 title 域名解析流程图
@@ -53,5 +52,4 @@ state DNSServer {
         state 域名服务器 : lv3ns3.ffdns.net.
         state 域名服务器 : lv3ns4.ffdns.net.
 }
-@enduml
 @enduml
