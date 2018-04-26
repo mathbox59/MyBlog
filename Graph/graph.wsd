@@ -1,0 +1,14 @@
+@startuml
+scale 300 * 300
+start
+: "获取系统当前时间";: "有事件触发";
+if ( ? ) then(需要)
+        : "花1个小时";: "有帮助";
+        stop
+else(不需要)
+        : "有visio就够了";
+        stop
+endif
+
+caption figure 1.2 test
+@enduml

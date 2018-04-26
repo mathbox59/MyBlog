@@ -1,0 +1,19 @@
+@startuml
+scale 600 width
+
+手机->设备 : 进入配网页面，开始扫描设备
+note left: 扫描设备可使用WiFi-SDK
+
+设备->手机 : 发给手机存在信号
+
+手机->设备 : 连接设备
+note left
+        使用设备出厂默认SSID&PWD
+end note
+设备->手机 : 发送"连接成功"消息给手机
+手机->设备 : 将SSID&PWD传给设备
+note left
+        用户在配网页面可选择不同的SSID（网络名称）
+        输入该SSID的密码
+end note
+@enduml
