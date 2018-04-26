@@ -6,6 +6,7 @@ note left: 扫描设备可使用WiFi-SDK
 
 设备->手机 : 发给手机存在信号
 
+
 手机->设备 : 连接设备
 note left
         使用设备出厂默认SSID&PWD
