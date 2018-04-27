@@ -1,5 +1,5 @@
 #My Blog
-This is my blog on github, i want to write something about my life,study,etc.
+This is my blog on github, I want to write something about my life,study,etc.
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 

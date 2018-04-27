@@ -1,14 +1,13 @@
 @startuml
-scale 300 * 300
-start
-: "获取系统当前时间";: "有事件触发";
-if ( ? ) then(需要)
-        : "花1个小时";: "有帮助";
-        stop
-else(不需要)
-        : "有visio就够了";
-        stop
-endif
+[*] -> wifi模块复位
+wifi模块复位->wifi模块初始化
+note left of wifi模块初始化
+将SOCKA设置为9998,device .myroome.com
+将SOCKB设置为9528,255,255,255,255
+end note
+wifi模块初始化->检查是否连上路由器:初始化成功
+wifi模块初始化->wifi模块复位:初始化失败
+检查是否连上路由器->是否已向服务器注册:是
+检查是否连上路由器->wifi模块复位:否
 
-caption figure 1.2 test
 @enduml
